@@ -1,0 +1,17 @@
+{
+	"env": {
+        "jquery": true,
+		"node": true,
+		"browser": true,
+		"es6": true
+    },
+	"extends": "airbnb",
+	"plugins": [
+		"react",
+		"html"
+	],
+	"rules": {
+        "indent": ["error", 4, {"SwitchCase": 1}],
+		"comma-dangle": ["error", "never"]
+    }
+}

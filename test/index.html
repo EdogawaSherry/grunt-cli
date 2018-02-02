@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>grunt-cli</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <meta name="author" content="yeluochen,yeluochen314@163.com">
+    <script>
+    !(function() {
+        function setFontSize() {
+            var _document = document,
+                _documentElement = _document.documentElement,
+                html = _document.getElementsByTagName('html')[0],
+                width = _documentElement && _documentElement.clientWidth && _documentElement.clientWidth ||
+                window.innerHeight && window.innerHeight ||
+                _document.body.clientWidth;
+            html.style.fontSize = width / 10 + 'px';
+        }
+        setFontSize();
+        window.addEventListener('resize', function() {
+            setTimeout(function() {
+                setFontSize()
+            }, 16);
+        });
+    })();
+    </script>
+    <link rel="stylesheet" href="css/main.88615dd1.css">
+</head>
+
+<body>
+    <div class="bg">hello</div>
+    <script src="js/main.c6530f51.js"></script>
+</body>
+
+</html>
