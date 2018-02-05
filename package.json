@@ -36,6 +36,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-stylus": "^1.2.0",
     "grunt-contrib-uglify": "^3.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-filerev": "^2.3.1",
@@ -44,5 +45,8 @@
     "grunt-usemin": "^3.1.1",
     "load-grunt-tasks": "^3.5.2",
     "time-grunt": "^1.4.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }
