@@ -1,7 +1,7 @@
 # grunt-cli
 
 ## 功能
-* sprite图的生成(其实是先转为styl再转less，less直接生成的的时候会出现重复的class，然后就只有这样做了)
+* sprite图的生成
 * js／css hash md5 处理(js/html/css合体了，牵一发而动全身，感觉不怎么好，速度稍慢)
 * 压缩打包(压缩图片不咋地)
 * 服务器构建
@@ -42,4 +42,3 @@
 * 本来是打算直接换成less，但测试发现如果`index.less`里面引入多个`[spriteName].less`生成的css里面就会出现重复的class名，于是就由 `sprite=>styl=>less`这样的做法0.0
 * 所有的sprite图适合.png格式
 * 目前不适合移动端以及响应式，毕竟单位是px
-
