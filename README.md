@@ -29,6 +29,7 @@
 * app/ 自动生成 正式代码
 * .eslintrc.json 真是个大家伙，这种检测要命啊，以后还是换一换0.0
 * Gruntfile.js grunt的运行代码
+* sprite-config/ 移动端rem sprite图的配置
 * ...
 
 ## 运行
@@ -41,4 +42,7 @@
 * 原图放在`src/resource/img/sprite`里面，生成的sprite图和样式文件都根据所创建的文件夹名称来的 栗子 原图路径 `src/resource/img/sprite/[spriteName]` 生成的sprite图路径`test/resource/img/sprite/[spriteName].png` 样式文件路径 `src/resource/css/sprite/[spriteName].less` 初次`index.less`里面手动引入即可，后续改变图片就自动改变了
 * 本来是打算直接换成less，但测试发现如果`index.less`里面引入多个`[spriteName].less`生成的css里面就会出现重复的class名，于是就由 `sprite=>styl=>less`这样的做法0.0
 * 所有的sprite图适合.png格式
-* 目前不适合移动端以及响应式，毕竟单位是px
+
+### sprite-config文件说明
+* `spritesheet-templates` rem的转换配置文件，具体1rem值根据设计来，截图可知修改的位置。替换位置`/node_modules/spritesheet-templates/lib` 默认64px
+* `stylus.template.handlebars` 添加rem的class名称，生成的文件样式例如 .yeluochen .xx{}这样的，截图可以修改class。替换位置`node_modules/spritesheet-templates/lib/templates`，默认'.yeluochen'

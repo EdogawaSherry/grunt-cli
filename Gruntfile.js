@@ -342,13 +342,14 @@ module.exports = () => {
         });
         cleanSprite(spriteName);
         grunt.task.run('sprite:create');
-        console.log(chalk.green('styl转less开始'));
+        // console.log(chalk.green('styl转less开始'));
         const styltext = `@import "sprite/${spriteName}.styl";
-                        sprites($spritesheet_sprites);`;
+                        sprites($spritesheet_sprites);
+                        wapSprites($spritesheet_sprites);`;
         grunt.file.write(`${config.src}/css/sprite/.tmp/${spriteName}.styl`, styltext);
         grunt.task.run('stylus');
         grunt.task.run('clean:sprite_tmp');
-        console.log(chalk.green('styl转less结束'));
+        // console.log(chalk.green('styl转less结束'));
         // 初次需要手动引入
         grunt.task.run('hash');
     }
