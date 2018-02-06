@@ -434,5 +434,8 @@ module.exports = () => {
     grunt.registerTask('build', ['clean:app', 'copy:app', 'uglify', 'cssmin']);
     // 如果需要压缩图片 发布之后 这个压缩工具不咋地
     grunt.registerTask('buildImg', ['smushit']);
-    grunt.registerTask('default', ['tools', 'watch']);
+    // 初始化
+    grunt.registerTask('init', ['tools', 'hash']);
+    // 默认
+    grunt.registerTask('default', ['init', 'watch']);
 };

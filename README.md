@@ -40,7 +40,6 @@
 * 压缩图片 `grunt buildImg`(还是很差的0.0)[安利一个压缩网站](https://tinypng.com)
 
 ### sprite图的附加说明
-* 需要安装JRE环境[JRE下载](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
 * 原图放在`src/resource/img/sprite`里面，生成的sprite图和样式文件都根据所创建的文件夹名称来的 栗子 原图路径 `src/resource/img/sprite/[spriteName]` 生成的sprite图路径`test/resource/img/sprite/[spriteName].png` 样式文件路径 `src/resource/css/sprite/[spriteName].less` 初次`index.less`里面手动引入即可，后续改变图片就自动改变了
 * 本来是打算直接换成less，但测试发现如果`index.less`里面引入多个`[spriteName].less`生成的css里面就会出现重复的class名，于是就由 `sprite=>styl=>less`这样的做法0.0
 * 所有的sprite图适合.png格式
@@ -48,3 +47,6 @@
 ### sprite-config文件说明
 * `spritesheet-templates` rem的转换配置文件，具体1rem值根据设计来，截图可知修改的位置。替换位置`/node_modules/spritesheet-templates/lib` 默认64px
 * `stylus.template.handlebars` 添加rem的class名称，生成的文件样式例如 .yeluochen .xx{}这样的，截图可以修改class。替换位置`node_modules/spritesheet-templates/lib/templates`，默认'.yeluochen'
+
+### 附加说明
+* windows C盘可能出现权限问题(无法删除文件夹)，就别放C盘啦0.0
