@@ -3,5 +3,4 @@ const $ = require('jquery');
 
 window.$ = $;
 
-
 demo.init();

@@ -27,7 +27,8 @@
 	* index.html html文件
 * test/ 自动生成的 测试代码
 * app/ 自动生成 正式代码
-* .eslintrc.json 真是个大家伙，这种检测要命啊，以后还是换一换0.0
+* .eslintrc.json 真是个大家伙，这种检测真好玩0.0
+* .eslintignore 排除检测的目录(代码检测需要安装相应编辑器的插件)
 * Gruntfile.js grunt的运行代码
 * sprite-config/ 移动端rem sprite图的配置
 * ...
